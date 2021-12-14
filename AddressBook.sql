@@ -15,3 +15,8 @@ insert into AddressBookTable(FirstName,LastName,Address,City,State,Zip,Phone,Ema
 ('Rambabu', 'Netheti', 'Road No 34', 'Warangal', 'Telangana', '500478', '8374837584', 'rambabu@gmail.com'),
 ('Durga', 'Bhavani', 'Durga Temple Road', 'Medak', 'Telangana', '500493', '9924936885', 'durga@gmail.com'),
 ('Satya', 'Narayana', 'Bus Stand Road', 'Nellore', 'Andhra Pradesh', '500311', '6084375820', 'satya@gmail.com');
+
+/*UC4*/
+update AddressBookTable set City='Tirupathi' where FirstName='Johnson';
+update AddressBookTable set Zip='500378' where LastName='Bhavani';
+select * from AddressBookTable;
