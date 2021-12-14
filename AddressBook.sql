@@ -29,3 +29,6 @@ select FirstName,LastName from AddressBookTable where City='Vijayawada' or State
 
 /*UC7*/
 select count(City) as CityCount, count(State) as StateCount from AddressBookTable;
+
+/*UC8*/
+select * from AddressBookTable where City='Vijayawada' order by FirstName;
