@@ -32,3 +32,10 @@ select count(City) as CityCount, count(State) as StateCount from AddressBookTabl
 
 /*UC8*/
 select * from AddressBookTable where City='Vijayawada' order by FirstName;
+
+/*UC9*/
+alter table AddressBookTable add NameType varchar(30);
+
+update AddressBookTable set NameType='Family' where FirstName='Naveen' or FirstName='Lokesh';
+update AddressBookTable set NameType='Friends' where FirstName='Johnson' or FirstName='Satya';
+update AddressBookTable set NameType='Profession' where FirstName='Durga';
