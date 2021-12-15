@@ -39,3 +39,6 @@ alter table AddressBookTable add NameType varchar(30);
 update AddressBookTable set NameType='Family' where FirstName='Naveen' or FirstName='Lokesh';
 update AddressBookTable set NameType='Friends' where FirstName='Johnson' or FirstName='Satya';
 update AddressBookTable set NameType='Profession' where FirstName='Durga';
+
+/*UC10*/
+select NameType,count(*) as TypeCount from AddressBookTable group by NameType;
